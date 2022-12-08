@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "departments",
+  "info": {
+    "singularName": "department",
+    "pluralName": "departments",
+    "displayName": "Department",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "division": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::division.division",
+      "inversedBy": "departments"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "members": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::member.member",
+      "mappedBy": "id_department"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "tupoksi": {
+      "type": "text"
+    },
+    "prokers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::proker.proker",
+      "mappedBy": "department"
+    }
+  }
+}

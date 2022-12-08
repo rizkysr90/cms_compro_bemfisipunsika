@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adkesmas",
+  "info": {
+    "singularName": "adkesma",
+    "pluralName": "adkesmas",
+    "displayName": "Adkesma",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "cover_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "artikel": {
+      "type": "richtext"
+    }
+  }
+}
