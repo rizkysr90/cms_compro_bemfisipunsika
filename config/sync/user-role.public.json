@@ -1,0 +1,85 @@
+{
+  "name": "Public",
+  "description": "Default role given to unauthenticated user.",
+  "type": "public",
+  "permissions": [
+    {
+      "action": "api::adkesma.adkesma.find"
+    },
+    {
+      "action": "api::adkesma.adkesma.findOne"
+    },
+    {
+      "action": "api::berita.berita.find"
+    },
+    {
+      "action": "api::berita.berita.findOne"
+    },
+    {
+      "action": "api::bph.bph.find"
+    },
+    {
+      "action": "api::bph.bph.findOne"
+    },
+    {
+      "action": "api::department.department.find"
+    },
+    {
+      "action": "api::department.department.findOne"
+    },
+    {
+      "action": "api::division.division.find"
+    },
+    {
+      "action": "api::division.division.findOne"
+    },
+    {
+      "action": "api::member.member.find"
+    },
+    {
+      "action": "api::member.member.findOne"
+    },
+    {
+      "action": "api::misi.misi.find"
+    },
+    {
+      "action": "api::misi.misi.findOne"
+    },
+    {
+      "action": "api::proker.proker.find"
+    },
+    {
+      "action": "api::proker.proker.findOne"
+    },
+    {
+      "action": "api::visi.visi.find"
+    },
+    {
+      "action": "api::visi.visi.findOne"
+    },
+    {
+      "action": "plugin::slugify.slugController.findSlug"
+    },
+    {
+      "action": "plugin::users-permissions.auth.callback"
+    },
+    {
+      "action": "plugin::users-permissions.auth.connect"
+    },
+    {
+      "action": "plugin::users-permissions.auth.emailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.auth.forgotPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.register"
+    },
+    {
+      "action": "plugin::users-permissions.auth.resetPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.sendEmailConfirmation"
+    }
+  ]
+}
