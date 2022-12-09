@@ -33,12 +33,6 @@
         "audios"
       ]
     },
-    "members": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::member.member",
-      "mappedBy": "id_department"
-    },
     "slug": {
       "type": "string"
     },
@@ -50,6 +44,12 @@
       "relation": "oneToMany",
       "target": "api::proker.proker",
       "mappedBy": "department"
+    },
+    "members": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::member.member",
+      "inversedBy": "id_departments"
     }
   }
 }

@@ -15,9 +15,9 @@
     "name": {
       "type": "string"
     },
-    "id_department": {
+    "id_departments": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::department.department",
       "inversedBy": "members"
     },
